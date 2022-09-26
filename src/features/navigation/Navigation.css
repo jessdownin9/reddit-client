@@ -1,0 +1,32 @@
+.Navigation-bar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.Search-bar {
+    height: 34px;
+    width: 660px;
+    margin: auto;
+    background-color: #f6f7f8;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 45px;
+    background-image: url('./Magnifying-Glass.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left center;
+}
+
+.Search-bar:hover {
+    border: 1px solid #0179d3;
+    background-color: white;
+}
+
+.Logo {
+    padding: 20px;
+    height: 55px;
+}

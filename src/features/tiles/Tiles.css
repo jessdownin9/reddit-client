@@ -1,0 +1,44 @@
+h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+.Tile {
+    display: flex;
+    background-color: white;
+    width: 635px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+}
+
+.Tile:hover {
+    border: 1px solid #0179d3;
+}
+
+.Counter {
+    background-color: #f8f9fa;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.Up-arrow {
+    width: 20px;
+}
+
+.Down-arrow {
+    width: 20px;
+    transform: scaleY(-1);
+    padding-bottom: 4px;
+}
