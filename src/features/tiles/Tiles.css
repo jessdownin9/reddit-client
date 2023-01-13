@@ -1,10 +1,15 @@
+.Tiles {
+    margin: 0 auto;
+}
+
 h1 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: normal;
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
     margin-right: 10px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -12,13 +17,28 @@ h2 {
     font-size: 12px;
 }
 
+h3 {
+    font-size: 10px;
+    color: gray;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+    margin-left: 5px;
+}
+
 .Tile {
     display: flex;
     background-color: white;
     width: 635px;
-    margin: 0 auto;
     border: 1px solid lightgray;
     border-radius: 5px; 
+    margin-bottom: 10px;
 }
 
 .Tile:hover {
@@ -41,4 +61,36 @@ h2 {
     width: 20px;
     transform: scaleY(-1);
     padding-bottom: 4px;
+}
+
+.Post {
+    display: flex;
+    flex-direction: column;
+}
+
+.Comments {
+    margin-top: auto;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+}
+
+.Comments:hover {
+    background-color: #e8e8e8;
+}
+
+.Comments-icon {
+    width: 20px;
+}
+
+.Post .Post-image {
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.No-image {
+    display: none;
 }

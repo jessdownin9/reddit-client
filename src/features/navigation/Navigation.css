@@ -4,16 +4,18 @@
     position: fixed;
     display: flex;
     align-items: center;
+    z-index: 1;
+    background-color: white;
 }
 
-.Search-bar {
-    height: 34px;
+#Search-bar {
+    height: 40px;
     width: 660px;
     margin: auto;
     background-color: #f6f7f8;
     font-size: 14px;
-    border: none;
-    border-radius: 5px;
+    border: 0.5px solid lightgray;
+    border-radius: 25px;
     padding-left: 45px;
     background-image: url('./Magnifying-Glass.png');
     background-repeat: no-repeat;
@@ -21,7 +23,7 @@
     background-position: left center;
 }
 
-.Search-bar:hover {
+#Search-bar:hover {
     border: 1px solid #0179d3;
     background-color: white;
 }
