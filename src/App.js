@@ -1,21 +1,24 @@
 import React from 'react';
-import './App.css';
-import { Navigation } from './features/navigation/Navigation.js';
-import { Sidebar } from './features/sidebar/Sidebar';
-import { Tiles } from './features/tiles/Tiles.js';
+import Home from './pages/Home';
+import { Comments } from './pages/Comments';
+import Layout from './pages/Layout';
+import { Navigation } from './features/navigation/Navigation';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="Navigation-bar">
-        <Navigation />
-      </header>
-      <section className="Main">
-        <Tiles />
-        <Sidebar />
-      </section>
-    </div>
+      <BrowserRouter>
+        <header className="Navigation-bar">
+          <Navigation />
+        </header>
+        <Routes>
+          <Route path='/' element={<Layout />} />
+            <Route index element={<Home />} />
+            <Route path='Comments' element={<Comments />} >
+          </Route>
+        </Routes>
+      </BrowserRouter>
   );
 }
 

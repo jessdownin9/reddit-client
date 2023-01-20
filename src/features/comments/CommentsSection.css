@@ -1,0 +1,51 @@
+
+.Tile-with-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.Comments-tile {
+    all: inherit;
+    display: flex;
+    background-color: white;
+    width: 635px;
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+}
+
+.Comment {
+    margin: 15px;
+}
+
+.Comment-info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.Comment-author {
+    color: black;
+}
+
+.Comment-body {
+    font-size: 14px;
+    max-width: 580px;
+    overflow-wrap: break-word;
+}
+
+.Comment-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.Comment-up-arrow {
+    width: 20px;
+}
+
+.Comment-down-arrow {
+    width: 20px;
+    transform: scaleY(-1);
+    padding-bottom: 4px;
+}
