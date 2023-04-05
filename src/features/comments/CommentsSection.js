@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchComments, selectComments, selectLoaded } from './commentsSlice';
 import { Comment } from './Comment';
+import './CommentsSection.css';
 
 export function CommentsSection({post}) {
     const dispatch = useDispatch();

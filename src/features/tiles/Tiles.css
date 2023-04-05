@@ -114,3 +114,15 @@ h3 {
 .No-image {
     display: none;
 }
+
+@media screen and (max-width: 960px) {
+    .Tiles {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .Tile {
+        width: auto;
+        margin: 1rem;
+    }
+}

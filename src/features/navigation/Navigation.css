@@ -10,7 +10,7 @@
 
 #Search-bar {
     height: 40px;
-    width: 660px;
+    width: 80vw;
     margin: auto;
     background-color: #f6f7f8;
     font-size: 14px;
@@ -31,4 +31,17 @@
 .Logo {
     padding: 20px;
     height: 55px;
+}
+
+@media screen and (max-width: 960px) {
+    #Search-bar {
+        max-width: 75vw;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    #Search-bar {
+        max-width: 50vw;
+    }
 }
