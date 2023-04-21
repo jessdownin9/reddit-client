@@ -54,7 +54,7 @@ export function Tile({ post }) {
             <div className='Post'>
                 <h3>Posted by {post.author} {formatDate(post.created)}</h3>
                 <h1>{post.title}</h1>
-                <img className={post.thumbnail_width ? 'Post-image' : 'No-image'} alt={post.title} src={post.thumbnail}/>
+                <img className={post.thumbnail_width ? 'Post-image' : 'No-image'} alt={post.title} src={post.url}/>
                 <div className='Comments'>
                     <img className='Comments-icon' alt='comment bubble' src={require('./Comments.png')}/>
                     <div className='Comments-link-container'>
